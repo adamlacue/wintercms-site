@@ -21,9 +21,9 @@
 
 /* Colors */
 :root {
-  --color-default: #0a0d13;
-  --color-primary: #0d42ff;
-  --color-secondary: #0e1d34;
+  --color-default: #1e1e1e;
+  --color-primary: #a97449;
+  --color-secondary: #5c1a22;
 }
 
 /* Smooth scroll behavior */
@@ -81,8 +81,6 @@ section {
   color: #001973;
   position: relative;
   z-index: 2;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   position: relative;
 }
 
@@ -1721,7 +1719,7 @@ section {
   width: 100%;
   min-height: 50vh;
   background-color: var(--color-secondary);
-  background-image: url("../img/hero-bg.png");
+  background-image: url("../img/hero-bg5.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1930,3 +1928,31 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+.round-image {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* New container-level adjustment */
+.custom-hero-img {
+  margin-top: 65px;  /* moves it down */
+  margin-left: 30px; /* moves it right */
+  display: flex;
+  justify-content: center;
+}
+
+.custom-hero-image {
+  width: 100%;               /* fills the column */
+  max-width: 500px;          /* cap it for large screens */
+  height: auto;
+  border-radius: 150px;       /* big rounded corners */
+  border: 6px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
