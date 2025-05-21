@@ -303,10 +303,11 @@ section {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.header .logo img {
+.header .logo img:not(.heart-logo) {
   max-height: 40px;
   margin-right: 6px;
 }
+
 
 .header .logo h1 {
   font-size: 40px;
@@ -314,6 +315,11 @@ section {
   font-weight: 700;
   color: #000000;
   font-family: 'Cambridge';
+}
+
+.header .logo img:not(.heart-logo) {
+  max-height: 40px;
+  margin-right: 6px;
 }
 
 /*--------------------------------------------------------------
@@ -1940,7 +1946,7 @@ section {
 
 /* New container-level adjustment */
 .custom-hero-img {
-  margin-top: 65px;  /* moves it down */
+  margin-top: 80px;  /* moves it down */
   margin-left: 30px; /* moves it right */
   display: flex;
   justify-content: center;
@@ -1950,9 +1956,13 @@ section {
   width: 100%;               /* fills the column */
   max-width: 500px;          /* cap it for large screens */
   height: auto;
-  border-radius: 150px;       /* big rounded corners */
+  border-radius: 70px;       /* big rounded corners */
   border: 6px solid #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   object-fit: cover;
 }
 
+.heart-logo {
+  height: 60px !important;
+  width: auto;
+}

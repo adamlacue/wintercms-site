@@ -6,11 +6,20 @@ title = "index"
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
+<!--
       <a href="/" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- Uncomment the line below if you also wish to use an image logo 
         <img src="{{ 'assets/img/heart.jpg' | theme }}" alt="">
         <h1>CareSmart Solutions</h1>
       </a>
+-->
+
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="{{ 'assets/img/heart.jpg' | theme }}" alt="Heart Logo" class="heart-logo me-2">
+        <img src="{{ 'assets/img/caresmart-logo2.svg' | theme }}" alt="CareSmart Logo" style="height: 50px;">
+      </a>
+
+
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -34,53 +43,19 @@ title = "index"
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h2 data-aos="fade-up">Trusted Care, Right at Home</h2>
-          <p data-aos="fade-up" data-aos-delay="100">CareSmart Solutions is Central PA's premier home care agency. Providing in home senior care and support for individuals in the community.</p>
-
-          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" class="form-control" placeholder="ZIP code or CitY">
-            <button type="submit" class="btn btn-primary">Search</button>
-          </form>
-
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Clients</p>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Support</p>
-              </div>
-            </div><!-- End Stats Item -->
-
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Workers</p>
-              </div>
-            </div><!-- End Stats Item -->
-
-          </div>
+          <p data-aos="fade-up" data-aos-delay="100">
+            CareSmart Solutions is Central PA's premier home care agency. Providing in home senior care and support for individuals in the community.
+          </p>
         </div>
 
         <div class="col-lg-5 order-1 order-lg-2 hero-img custom-hero-img" data-aos="zoom-out">
           <img src="{{ 'assets/img/index-hero-img.png' | theme }}" class="img-fluid mb-3 mb-lg-0 custom-hero-image" alt="">
         </div>
-
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+
+  <!-- End Hero Section -->
 
   <main id="main">
 
